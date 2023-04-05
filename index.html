@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="icon" href="images/calculator_icon.png">
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+    <div id="outer_box">
+        <h1>Calculator</h1>
+        <div style="height: 25px;"></div>
+        <div id="sec_display"></div>
+        <div id="display">0</div>
+        <!-- <div style="height: 3px;"></div> -->
+        <button type="button" onclick="per()">%</button>
+        <button type="button" onclick="clear1()">C</button>
+        <button type="button" onclick="operator('×')">×</button>
+        <button type="button"><div style="height: 30px;" onclick="backspace()">⌫</div></button>
+        <div style="height: 3px;"></div>
+        <button onclick="number(7)">7</button>
+        <button onclick="number(8)">8</button>
+        <button onclick="number(9)">9</button>
+        <button type="button" onclick="operator('/')">/</button>
+        <div style="height: 3px;"></div>
+        <button onclick="number(4)">4</button>
+        <button onclick="number(5)">5</button>
+        <button onclick="number(6)">6</button>
+        <button type="button" onclick="operator('+')">+</button>
+        <div style="height: 3px;"></div>
+        <button onclick="number(1)">1</button>
+        <button onclick="number(2)">2</button>
+        <button onclick="number(3)">3</button>
+        <button type="button" onclick="operator('-')">-</button>
+        <div style="height: 3px;;"></div>
+        <button onclick="decimal()" id="dec">.</button>
+        <button onclick="number(0)">0</button>
+        <button id="B12" onclick="cal()">=</button>
+        <script src="myScript.js"></script>
+    </div>
+</body>
+
+</html>
